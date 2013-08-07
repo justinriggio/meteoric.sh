@@ -28,7 +28,7 @@ APP_HOST=meteor.julien-c.fr
 EC2_PEM_FILE=~/.ssh/proxynet.pem
 
 # What's your project's Git repo?
-GIT_URL=git://github.com/SachaG/Microscope.git
+GIT_URL=https://username:password@github.com/username/reponame.git
 
 # Does your project use meteorite, or plain meteor?
 METEORITE=true
@@ -38,6 +38,9 @@ METEOR_RELEASE=0.6.4
 
 #If you have an external service, such as Google SMTP, set this
 #MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
+#URL encoded %40 mailgun example
+#MAIL_URL=smtp://postmaster%40domain.mailgun.org:password@smtp.mailgun.org:587
+
 
 # What's your app name?
 APP_NAME=microscope
@@ -50,6 +53,9 @@ GIT_BRANCH=master
 
 # Kill the forever and node processes, and deletes the bundle directory and tar file prior to deploying
 FORCE_CLEAN=false
+
+# Setup a listening port for your instance / default is 80
+#PORT=8000
 
 # If you want to do something before forever starts Meteor, you can do it here
 # NOTE: Don't forget to use a semi-colon at the end of every command
