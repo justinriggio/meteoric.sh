@@ -18,6 +18,9 @@ METEOR_RELEASE=0.6.4
 
 #If you have an external service, such as Google SMTP, set this
 #MAIL_URL=smtp://USERNAME:PASSWORD@smtp.googlemail.com:465
+#URL encoded %40 mailgun example
+#MAIL_URL=smtp://postmaster%40domain.mailgun.org:password@smtp.mailgun.org:587
+
 
 # What's your app name?
 APP_NAME=microscope
