@@ -8,7 +8,7 @@ APP_HOST=meteor.julien-c.fr
 EC2_PEM_FILE=~/.ssh/proxynet.pem
 
 # What's your project's Git repo?
-GIT_URL=git://github.com/SachaG/Microscope.git
+GIT_URL=https://username:password@github.com/username/reponame.git
 
 # Does your project use meteorite, or plain meteor?
 METEORITE=true
