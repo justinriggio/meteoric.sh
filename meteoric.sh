@@ -108,9 +108,10 @@ if [ -n "$PRE_METEOR_START" ]; then
     DEPLOY="$DEPLOY $PRE_METEOR_START"
 fi;
 
+# Changed to support upstart for managing the node process.
 DEPLOY="$DEPLOY
 echo Starting forever;
-sudo -E forever restart bundle/main.js || forever start bundle/main.js;
+sudo -E service restart $APP_NAME;
 "
 
 case "$1" in
